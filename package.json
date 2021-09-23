@@ -1,0 +1,28 @@
+{
+  "name": "metalamp-task2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laranto-spb/Metalamp-Task2.git"
+  },
+  "author": "Larisa Antokhina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laranto-spb/Metalamp-Task2/issues"
+  },
+  "homepage": "https://github.com/Laranto-spb/Metalamp-Task2#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
