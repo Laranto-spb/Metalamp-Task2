@@ -1,0 +1,38 @@
+include colors.pug
+include titles.pug
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="index.css")
+		title Colors and types
+	body 
+		.container.main-content
+			.color-info
+				ul(class="color-info list-reset  ")
+					each n, key in colors
+						li(class= "color-info__item ")
+							div(class="color-info__box " style=`background-color: ${n}`)
+							div(class="color-info__content ")
+								h2(class="color-info__name ")= key
+								p(class="color-info__descr ")= n 
+			.text-info
+				ul(class="text-list list-reset")
+					li(class="text-list__item")
+						h1(class="h1-title" style=`color: ${colors["Dark Shade 75%"]}`) H1 
+						p(class="h1-descr") This one is the sub-section or widget title
+					li(class="text-list__item")
+						h2(class="h2-title" style=`color: ${colors["Dark Shade 75%"]}`) H2 
+						p(class="h2-descr") Next one is the item title inside widgets
+					li(class="text-list__item")
+						h3(class="h3-title" style=`color: ${colors["Dark Shade 75%"]}`) H3 
+						p(class= titles.h3.isUpperCase ? "text-list__title_upper": "" class="h3-descr")  This is a label or CTA text
+					li(class="text-list__item")
+						h3(class="body-title" style=`color: ${colors["Dark Shade 75%"]}`) Body 
+						p(class="body-descr")  This is the body text which is used for most of the design, like paragraphs, lists, etc.
+
+
+
